@@ -27,6 +27,6 @@ anom$name <- reorder(anom$name, -anom$count, min)
 ggplot(anom, aes(date, count)) +
   geom_line() +
   facet_wrap(~name) +
-  ggtitle("MUNICIPALITIES WITH ANOMALIES IN DISAPPEARANCES\nFROM SEPTEMBER 2014 TO JANUARY 2015") +
+  ggtitle("MUNICIPALITIES WITH ANOMALIES IN DISAPPEARANCES\nFROM AUGUST 2014 TO JANUARY 2015") +
   sm_theme()
 ggsave("graphs/sm.png", width = 14.50, height = 9.6, dpi = 100)

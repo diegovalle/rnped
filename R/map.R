@@ -25,12 +25,12 @@ ggplot(num_dis, aes(lon, lat),
                size = .2, color = "black", fill = "transparent") +
   coord_map("albers", lat0 = bb[ 2 , 1 ] , lat1 = bb[ 2 , 2 ] )  + 
   geom_point(aes(size = count, fill = count), 
-             shape = 21, color = "black") +
-  scale_fill_gradient2( 
-    low = "#f7fcf0", high = "#084081", mid = "#7bccc4", space = "Lab",
-    guide="none") +
+             shape = 21, color = "black", fill = "#084081") +
+  #scale_fill_gradient2( 
+  #  low = "#f7fcf0", high = "#084081", mid = "#7bccc4", space = "Lab",
+  #  guide="none") +
   scale_size_area("number of disappeared\nfrom Sep 14 to Jan 15", max_size = 12) +
-  ggtitle("MUNICIPALITIES WITH ANOMALIES IN DISAPPEARANCES\nFROM SEPTEMBER 2014 TO JANUARY 2015") +
+  ggtitle("MUNICIPALITIES WITH ANOMALIES IN DISAPPEARANCES\nFROM AUGUST 2014 TO JANUARY 2015") +
   #guides(fill = guide_legend(override.aes = list(size = 6)))+
   theme(legend.key = element_rect( fill = NA)) +
   infographic_theme2() +
