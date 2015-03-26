@@ -1,0 +1,6 @@
+.Rproj.user
+.Rhistory
+.RData
+run_all.Rout
+*.json
+*.png
